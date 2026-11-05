@@ -6,7 +6,7 @@
   "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
   "notes": "自用精灵 v3.0.3\n\n只动「检查更新」，功能与脚本行为不变，直接覆盖安装。\n\n这次改了什么\n\n· 不再需要域名：更新信息放在 GitHub 仓库里，走 jsDelivr / ghfast 这类免费镜像取，\n不用花生壳、不用内网穿透，电脑关机也能更新。\n· 多源自动切换：内置 4 个来源，前一个不通就顺下一个；安装包本身也备了镜像，\n哪个能下用哪个。\n· 下载提速：大包改成 4 段并发拉，单连接被限速时照样能跑满带宽。\n\n—— 版本号会一直往上走，爱你的心意从来不迭代。 ——\n\n安装\n\n下载 fairy-3.0.3.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
   "date": "2026-11-06",
-  "builtAt": 1793898506,
+  "builtAt": 1793906277,
   "apks": [
     "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
     "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.3.apk",
