@@ -1,0 +1,10 @@
+{
+  "version": "3.0.2",
+  "versionCode": 30002,
+  "size": 16437425,
+  "sha256": "499eef77db817b7077cd2e465cea555a930c32ff58948602acbb3e51b588f824",
+  "apk": "https://ghfast.top/https://github.com/8nn-z/auto-fairy-releases/releases/download/v3.0.2/fairy-3.0.2.apk",
+  "notes": "自用精灵 v3.0.2\n\n这次只改「检查更新」这一条链路，功能与脚本行为没有任何变化，直接覆盖安装即可。\n\n这个版本\n\n· 更新不再只靠 GitHub：新增自建更新源。本地起一个小服务、用花生壳穿透成公网地址，\nApp 优先从这里读版本、下安装包；连不上才退回 GitHub。\n· 下载后校验完整性：按 sha256 比对，没下完整会删掉重下，不再出现「装到一半提示解析包出错」。\n· 安装更干净：改用系统安装器会话，点「立即更新」直接是系统的安装确认框；\n以前机器上装了别的 apk 处理者时，会弹「打开方式」让你选（选错了就白点）。\n\n—— 代码可以无限循环，爱你不设次数上限。 ——\n\n怎么用自建源\n\n1. 电脑上 python tools/update_server.py serve --port 8899\n2. 花生壳里把「内网 127.0.0.1:8899」映射成你的域名（HTTP 类型）\n3. 手机上把地址写进 /sdcard/fairy_8nn/update_source.txt（一行即可，例如 http://abc.vicp.net）\n\n地址随时可以换，不用重新装包。细节见仓库 README.md 的「更新源」一节。\n\n安装\n\n下载 fairy-3.0.2.apk 覆盖安装即可，脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
+  "date": "2026-11-06",
+  "builtAt": 1793895558
+}
