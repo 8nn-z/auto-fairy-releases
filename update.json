@@ -1,10 +1,16 @@
 {
-  "version": "3.0.2",
-  "versionCode": 30002,
-  "size": 16437425,
-  "sha256": "499eef77db817b7077cd2e465cea555a930c32ff58948602acbb3e51b588f824",
-  "apk": "https://ghfast.top/https://github.com/8nn-z/auto-fairy-releases/releases/download/v3.0.2/fairy-3.0.2.apk",
-  "notes": "自用精灵 v3.0.2\n\n这次只改「检查更新」这一条链路，功能与脚本行为没有任何变化，直接覆盖安装即可。\n\n这个版本\n\n· 更新不再只靠 GitHub：新增自建更新源。本地起一个小服务、用花生壳穿透成公网地址，\nApp 优先从这里读版本、下安装包；连不上才退回 GitHub。\n· 下载后校验完整性：按 sha256 比对，没下完整会删掉重下，不再出现「装到一半提示解析包出错」。\n· 安装更干净：改用系统安装器会话，点「立即更新」直接是系统的安装确认框；\n以前机器上装了别的 apk 处理者时，会弹「打开方式」让你选（选错了就白点）。\n\n—— 代码可以无限循环，爱你不设次数上限。 ——\n\n怎么用自建源\n\n1. 电脑上 python tools/update_server.py serve --port 8899\n2. 花生壳里把「内网 127.0.0.1:8899」映射成你的域名（HTTP 类型）\n3. 手机上把地址写进 /sdcard/fairy_8nn/update_source.txt（一行即可，例如 http://abc.vicp.net）\n\n地址随时可以换，不用重新装包。细节见仓库 README.md 的「更新源」一节。\n\n安装\n\n下载 fairy-3.0.2.apk 覆盖安装即可，脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
+  "version": "3.0.3",
+  "versionCode": 30003,
+  "size": 16441521,
+  "sha256": "5fd398d62a601c87364485f988716109d99f9431b8a21d3cdc3896d50714142c",
+  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
+  "notes": "自用精灵 v3.0.3\n\n只动「检查更新」，功能与脚本行为不变，直接覆盖安装。\n\n这次改了什么\n\n· 不再需要域名：更新信息放在 GitHub 仓库里，走 jsDelivr / ghfast 这类免费镜像取，\n不用花生壳、不用内网穿透，电脑关机也能更新。\n· 多源自动切换：内置 4 个来源，前一个不通就顺下一个；安装包本身也备了镜像，\n哪个能下用哪个。\n· 下载提速：大包改成 4 段并发拉，单连接被限速时照样能跑满带宽。\n\n—— 版本号会一直往上走，爱你的心意从来不迭代。 ——\n\n安装\n\n下载 fairy-3.0.3.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
   "date": "2026-11-06",
-  "builtAt": 1793895558
+  "builtAt": 1793897705,
+  "apks": [
+    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
+    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.3.apk",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
+    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk"
+  ]
 }
