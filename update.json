@@ -1,16 +1,16 @@
 {
-  "version": "3.0.4",
-  "versionCode": 30004,
-  "size": 16445617,
-  "sha256": "520ffef872d4c52a34879029d15a13d3a64fb25e80ac9d1c909978bfa6c08697",
-  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
-  "notes": "自用精灵 v3.0.4\n\n修一个用起来最难受的问题，另外让长跑时「到底是不是模拟器挂了」有据可查。\n\n这次改了什么\n\n· 坐标点不再卡：以前每个坐标点是一个独立悬浮窗，动作一多（六七十个），\n点「显示/隐藏」主线程要连续开几十个窗口，卡五六秒；这期间再点，事件排着队执行，\n最后状态完全对不上。现在所有点画在同一层里，实测 78 个点用时 3~5 毫秒。\n· 启动就认环境：雷电、MuMu、真机自动识别，日志弹窗顶部直接写「跑在哪个模拟器、\nAndroid 几、屏幕多大、已经开机多久」。\n· 长跑守护：网络断开/恢复、开机超过 20 小时，都会在日志里留一行 ——\nMuMu 挂满一天容易卡死掉网，回头看日志就知道是模拟器先挂的还是脚本写错了。\n\n—— 你不回消息的时候，我就在这儿安静地数着循环次数。 ——\n\n一点变化\n\n坐标点现在是只读展示：能看落点、不再响应拖动和长按（原因见上，Android 14\n已经拿不到「窗口局部可触摸」的隐藏接口）。改坐标请走「列表 → 编辑」，\n同一个值写回去，效果一样。\n\n安装\n\n下载 fairy-3.0.4.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
-  "date": "2026-11-14",
-  "builtAt": 1794641811,
+  "version": "3.0.5",
+  "versionCode": 30005,
+  "size": 16449713,
+  "sha256": "f4e782ddd215c5140e607f645c2a05425d7c5c1672550589b0779f52bf1aba93",
+  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.5.apk",
+  "notes": "自用精灵 v3.0.5\n\n两处打磨：换设备导脚本时右上角老对不准，还有口令的到期管理。\n\n这次改了什么\n\n· 右上角坐标不再偏：导出脚本时多记一个屏幕密度，导入到别的设备时，贴右、贴顶、贴底的\n按钮改按「距边缘多少 dp」换算，屏幕中间的内容还是按屏幕比例拉伸。宽高比差得多\n（16:9 → 20:9）也不会把顶部按钮整个拽下去。已经调好的坐标一个像素都不动。\n· 口令按批次管理，带有效期：到期后遮罩会直接告诉你「已过期，请更新」，\n装上新版本就自动换上当前批次，不用手动改什么。\n\n—— 坐标会偏，是为了提醒你换过一台设备。 ——\n\n老脚本想吃上坐标修正，要重导一次\n\n在当初录脚本的那台设备上装好新版，重新导出一次（新版会把屏幕密度写进脚本），\n再拿到新设备导入即可。已经导入过、坐标调好的脚本不用管，保持原样。\n\n安装\n\n下载 fairy-3.0.5.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
+  "date": "2026-11-15",
+  "builtAt": 1794681353,
   "apks": [
-    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
-    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.4.apk",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
-    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk"
+    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.5.apk",
+    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.5.apk",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.5.apk",
+    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.5.apk"
   ]
 }
