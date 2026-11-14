@@ -1,16 +1,16 @@
 {
-  "version": "3.0.3",
-  "versionCode": 30003,
-  "size": 16441521,
-  "sha256": "4e4c9f80a72573ab4ca6a66f5e6cf3d168f7a9ad97f29aeb38cf7fc34c10e5dd",
-  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
-  "notes": "自用精灵 v3.0.3\n\n只动「检查更新」，功能与脚本行为不变，直接覆盖安装。\n\n这次改了什么\n\n· 不再需要域名：更新信息放在 GitHub 仓库里，走 jsDelivr / ghfast 这类免费镜像取，\n不用花生壳、不用内网穿透，电脑关机也能更新。\n· 多源自动切换：内置 4 个来源，前一个不通就顺下一个；安装包本身也备了镜像，\n哪个能下用哪个。\n· 下载提速：大包改成 4 段并发拉，单连接被限速时照样能跑满带宽。\n\n—— 版本号会一直往上走，爱你的心意从来不迭代。 ——\n\n安装\n\n下载 fairy-3.0.3.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
-  "date": "2026-11-06",
-  "builtAt": 1793906277,
+  "version": "3.0.4",
+  "versionCode": 30004,
+  "size": 16445617,
+  "sha256": "520ffef872d4c52a34879029d15a13d3a64fb25e80ac9d1c909978bfa6c08697",
+  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
+  "notes": "自用精灵 v3.0.4\n\n修一个用起来最难受的问题，另外让长跑时「到底是不是模拟器挂了」有据可查。\n\n这次改了什么\n\n· 坐标点不再卡：以前每个坐标点是一个独立悬浮窗，动作一多（六七十个），\n点「显示/隐藏」主线程要连续开几十个窗口，卡五六秒；这期间再点，事件排着队执行，\n最后状态完全对不上。现在所有点画在同一层里，实测 78 个点用时 3~5 毫秒。\n· 启动就认环境：雷电、MuMu、真机自动识别，日志弹窗顶部直接写「跑在哪个模拟器、\nAndroid 几、屏幕多大、已经开机多久」。\n· 长跑守护：网络断开/恢复、开机超过 20 小时，都会在日志里留一行 ——\nMuMu 挂满一天容易卡死掉网，回头看日志就知道是模拟器先挂的还是脚本写错了。\n\n—— 你不回消息的时候，我就在这儿安静地数着循环次数。 ——\n\n一点变化\n\n坐标点现在是只读展示：能看落点、不再响应拖动和长按（原因见上，Android 14\n已经拿不到「窗口局部可触摸」的隐藏接口）。改坐标请走「列表 → 编辑」，\n同一个值写回去，效果一样。\n\n安装\n\n下载 fairy-3.0.4.apk 覆盖安装。脚本、变量、执行日志都在 sdcard/fairy_8nn，升级不会丢。",
+  "date": "2026-11-14",
+  "builtAt": 1794641811,
   "apks": [
-    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
-    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.3.apk",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk",
-    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.3.apk"
+    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
+    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.4.apk",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk",
+    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.4.apk"
   ]
 }
