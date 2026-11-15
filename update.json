@@ -1,16 +1,16 @@
 {
-  "version": "3.0.6",
-  "versionCode": 30006,
+  "version": "3.0.7",
+  "versionCode": 30007,
   "size": 16453809,
-  "sha256": "b1474cd21cb7178f5509223900df855bef2b48f2987ba20169092d2ec0e94978",
-  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.6.apk",
-  "notes": "自用精灵 v3.0.6\n\n启用新一批启动口令，装上新版本就能用；有效期到 2028 年 1 月 1 日。",
+  "sha256": "cd50211d299a009bda2d29f35ccee8f6d1cae2e3372757613cc23a6f19933b15",
+  "apk": "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.7.apk",
+  "notes": "自用精灵 v3.0.7\n\n更新下载时不会再被误点关掉，进度和结果都看得见；覆盖安装即可。",
   "date": "2026-11-15",
-  "builtAt": 1794682669,
+  "builtAt": 1794726264,
   "apks": [
-    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.6.apk",
-    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.6.apk",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.6.apk",
-    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.6.apk"
+    "https://ghfast.top/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.7.apk",
+    "https://cdn.jsdelivr.net/gh/8nn-z/auto-fairy-releases@dist/fairy-3.0.7.apk",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.7.apk",
+    "https://raw.githubusercontent.com/8nn-z/auto-fairy-releases/dist/fairy-3.0.7.apk"
   ]
 }
